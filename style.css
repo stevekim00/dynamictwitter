@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+h3, h4 {
+    font-weight: 600;
+}
+
+h3, p {
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+}
+
+p {
+    color: #586976;
+    font-size: 15px;
+}
+
+.container {
+    width: 100%;
+    max-width: 598px;
+}
+
+.display-name-container {
+    margin: 10px 0 0;
+    align-items: center;
+}
+
+.display-name {
+    display: inline;
+    font-size: 20px;
+}
+
+#verified-icon {
+    height: 18.75px;
+    width: 18.75px;
+    margin: 0 2px;
+}
+
+#header, #cover, #profile, #contents, #tweet-log {
+    border-left: 0.25px solid #EFF3F4;
+    border-right: 0.25px solid #EFF3F4;
+    border-width: thin;
+}
+
+/* 
+HEADER
+*/
+#header {   
+    height: 40px;
+    padding: 12px 16px 0;
+}
+
+/* 
+PROFILE
+*/
+#profile {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 16px 0;
+    border-bottom: none;
+}
+#profile-image-main-container {
+    position: relative;
+    top: -85px;
+    height: 48px;
+}
+#profile-image-main {
+    height: 133.5px;
+    width: 133.5px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+#profile-display-name {
+    font-weight: 900;
+}
+#joined-date {
+    margin: 16px 0;
+}
+#follow-counts {
+    margin-bottom: 20px;
+}
+.count {
+    font-weight: 600;
+    color: black;
+}
+#following-count {
+    display: inline-block;
+}
+#followers-count {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* 
+CONTENTS
+*/
+#contents {
+    display: flex;
+   justify-content: space-around;
+}
+.contents-links {
+    color: #586976;
+    border-bottom: 5px solid transparent;
+    padding: 16px 0;
+}
+.contents-links:hover {
+    color: black;
+    border-bottom: 5px solid #1D9BF0;
+}
+
+/* 
+TWEETS
+*/
+.tweet {
+    border-top: 0.25px solid #EFF3F4;
+    padding: 12px 16px 0;
+    display: flex;
+}
+.tweet-profile-photo {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+.middle-section {
+    margin: 0 10px;
+}
+.tweet-profile-info {
+    display: flex;
+    align-items: center;
+}
+.tweet-username-and-timestamp {
+    margin: 0 5px;
+}
+.tweet-text-container {
+    margin: 10px 0;
+}
+.tweet-text {
+    color: black;
+}

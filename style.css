@@ -50,17 +50,20 @@ p {
     border-width: thin;
 }
 
-/* 
-HEADER
-*/
+/* HEADER */
 #header {   
     height: 40px;
     padding: 12px 16px 0;
 }
 
-/* 
-PROFILE
-*/
+/* COVER */
+#cover {
+    background-size: contain;
+    height: 199.33px;
+    background-repeat: no-repeat;
+}
+
+/* PROFILE */
 #profile {
     display: flex;
     flex-direction: column;
@@ -99,9 +102,7 @@ PROFILE
     margin-left: 20px;
 }
 
-/* 
-CONTENTS
-*/
+/* CONTENTS */
 #contents {
     display: flex;
    justify-content: space-around;
@@ -116,9 +117,7 @@ CONTENTS
     border-bottom: 5px solid #1D9BF0;
 }
 
-/* 
-TWEETS
-*/
+/* TWEETS */
 .tweet {
     border-top: 0.25px solid #EFF3F4;
     padding: 12px 16px 0;

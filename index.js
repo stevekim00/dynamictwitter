@@ -56,14 +56,14 @@ function getUrlParameter(name) {
     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 };
 
-var user = users[getUrlParameter('user')];
+var user = users[getUrlParameter('user')] || users.user1;
 
 $("#header").html(`
     <h3 class="display-name" id="header-display-name">${user.displayName}</h3>
     <img id="verified-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/240px-Twitter_Verified_Badge.svg.png">
 `);
 
-$("#cover").css({backgroundImage: `url(${user.coverPhotoURL})`, backgroundSize:`contain`, height:`199.33px`, backgroundRepeat:`no-repeat`});
+$("#cover").css({backgroundImage: `url(${user.coverPhotoURL})`});
 
 function nFormatter(num, digits) {
     var si = [
@@ -83,7 +83,7 @@ function nFormatter(num, digits) {
       }
     }
     return (num / si[i].value).toFixed(digits).replace(rx, "$1") + si[i].symbol;
-  }
+}
 
 var formattedFollowingCount = nFormatter(user.followingCount, 3);
 var formattedFollowerCount = nFormatter(user.followerCount, 3);
